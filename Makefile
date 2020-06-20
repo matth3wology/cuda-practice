@@ -5,7 +5,7 @@ LIB=-L"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.0/lib"
 LIBFLAGS=-lcublas -lcuda
 
 all:
-	$(CC) main.cu $(INCLUDE) $(LIB) $(LIBFLAGS) $(INCLUDEFLAGS) -o $(OUTFILE)
+	$(CC) src/main.cu $(INCLUDE) $(LIB) $(LIBFLAGS) $(INCLUDEFLAGS) -o $(OUTFILE)
 
 clean:
 	DEL *.ex*
